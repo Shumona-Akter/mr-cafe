@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- parisine font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!-- font lacbary -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font sourse -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a51f7db7fc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                dark: '#403C34',
+                deepDark:'#2B292B',
+                sweet:'#F7F2E9',
+                primary:'#AC8435'
+              },
+             
+            },
+            fontFamily:{
+                source: ['Source Sans Pro', 'sans-serif'],
+                lacbary:['Libre Baskerville', 'serif'],
+                Parisienne:['Parisienne', 'cursive'],
+
+            },
+             lineHeight: {
+              line:'80px',
+              line36:'36px',
+              line64:'64px',
+            },
+            backgroundImage: {
+              banner:"url('./images/bannerdesign.png')",
+              bannerVac:"url('./images/Whirl 3.svg')",
+              aboutBanner:"url('./images/about-banner.png')",
+              details1:"url('./images/details-1.png')",
+              details2:"url('./images/details-2.png')",
+              details3:"url('./images/details-3.png')",
+            },
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header part -->
+    <header class="py-5 bg-dark  hidden md:block ">
+        <div class="lg:w-11/12 2xl:w-9/12 lg:mx-auto  md:flex justify-between">
+            <h3 class="text-white font-source md:text-sm lg:text-base">Sign up for our Loyalty Program today and receive 15% OFF your first order.</h3>
+            <div class="text-white font-source md:text-sm lg:text-base flex">
+                <a href="" class="px-1 lg:px-2  xl:px-3">Need Help</a>
+                <a href="" class="px-1 lg:px-2  xl:px-3">(+302) 555-0107-122</a>
+                <div class="text-white font-source md:text-sm lg:text-base flex">
+                    <img src="./images/clock.png" alt="clock">
+                    <a href="" class="px-1 lg:px-2  xl:px-3">08:00am - 10:00pm</a>
+                </div>
+                <div class="text-white font-source md:text-sm lg:text-base flex justify-right">
+                    <img src="./images/location.png" alt="clock">
+                    <a href="" class="px-1 lg:px-2  xl:px-3">Our Locations</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- navber -->
+    <nav>
+      <div class="lg:w-11/12 2xl:w-9/12 lg:mx-auto  lg:flex justify-between items-center py-6 2xl:py-10">
+        <div class="logo pl-8 lg:pl-0">
+          <img src="./images/Logo.png" class="w-28 lg:w-full" alt="logo">
+        </div>
+        <div class="menu ">
+          <ul class="flex flex-col lg:flex-row pl-8 lg:pl-0">
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-base md:text-sm lg:text-base  text-black  lg:mr-3 xl:mr-8 2xl:mr-10">Home</a></li>
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-base md:text-sm lg:text-base  text-black  lg:mr-3 xl:mr-8 2xl:mr-10">About us</a></li>
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-base md:text-sm lg:text-base  text-black  lg:mr-3 xl:mr-8 2xl:mr-10">Coffe & Drinks</a></li>
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-base md:text-sm lg:text-base  text-black  lg:mr-3 xl:mr-8 2xl:mr-10">Food menu <i class="fa-solid fa-angle-down"></i></a></li>
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-base md:text-sm lg:text-base  text-black  lg:mr-3 xl:mr-8 2xl:mr-10">Reservation</a></li>
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-base md:text-sm lg:text-base  text-black  md:pt-0 md:mr-8 lg:mr-10 2xl:mr-12">Contact us</a></li>
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-sm lg:text-base   lg:mr-8 2xl:mr-10 text-black">$ <span>00.0 <span>/</span>0</span><span><i class="fa-solid fa-cart-shopping"></i></span></a></li>
+            <li class="mt-5 lg:mt-0"><a href="" class="font-source text-base md:text-sm lg:text-base  text-black  md:pt-0"><span><i class="fa-solid fa-user"></i></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <div id="banner" class="bg-sweet bg-banner bg-no-repeat	 bg-right-bottom px-5 ">
+        <div class=" grid md:grid-cols-2 lg:w-11/12 2xl:w-9/12 mx-auto">
+          <div class="banner-text  py-8 md:py-20 order-2 md:order-1">
+            <h3 class="text-xl capitalize font-lacbary text-dark">A Best Café House</h3>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl 3xl:text-7xl capitalize font-lacbary text-deepDark py-10 leading-10 lg:leading-line font-bold">Start Your Day With  Morning Coffee</h1>
+            <ul class="sm:flex text-base text-primary font-lacbary font-bold">
+              <li>Colombian Andean coffee</li>
+              <li class="sm:list-disc sm:ml-10 pt-4 sm:pt-0">Ethiopian acidic coffee</li>
+            </ul>
+            <p class="leading-line36 text-base font-source text-dark  py-6">We love the idea of indulging in your health, and every <span>item on our menu is full of lush, organic ingredients, bright</span>   flavor and beautiful color.</p>
+            <a href="" class="inline-block bg-primary border-2 border-primary py-4 px-8 text-base text-white font-source mr-10 rounded-lg hover:border-primary hover:bg-transparent hover:text-primary duration-500 mb-5 hover:border-2" >Get Yours Now</a>
+            <a href="" class="inline-block border-primary duration-500 border-2 py-4 px-8 text-base rounded-lg text-primary font-source hover:bg-primary  hover:text-base hover:text-white">Reservation</a>
+          </div>
+          <!-- img -->
+          <div class=" relative hidden md:block pt-20 order-1">
+                <img src="./images/Whirl 3.svg" class="w-full md:hidden lg:block" alt="">
+                <div class="absolute bottom-0 left-28">
+                  <img src="./images/banner-main-img.png" class="" alt="">
+                </div>
+          </div>
+        </div>
+      </div>
+      <!-- about us -->
+      <section id="about" class="bg-white px-5 bg-aboutBanner bg-no-repeat	 bg-right-bottom py-20 lg:py-40 ">
+          <div class=" md:w-2/4 2xl:w-1/2 mx-auto">
+            <img src="./images/qutetion.png" alt="" class="w-6 md:w-8 lg:w-12 mb-3">
+            <h1 class="leading-10 lg:leading-line64 xl:leading-line text-3xl md:text-4xl lg:5xl xl:text-6xl font-bold font-lacbary text-deepDark text-center ">Coffee is a way of stealing time which should by rights belong to your older self.</h1>
+            <img src="./images/qutation2.png" alt="" class="w-6 ml-auto md:w-8 lg:w-12">
+            <div class="flex justify-center ">
+              <img src="./images/about-coffe.png" alt="" class="w-14  md:w-18 lg:w-24">
+            </div>
+            
+
+          </div>
+      </section>
+
+
+      <!-- all-main -->
+      <section class="bg-sweet bg-banner bg-no-repeat	 bg-right-bottom px-5 py-10 ">
+          <div class="grid md:grid-cols-3 gap-6 lg:w-11/12 2xl:w-9/12 mx-auto">
+            <div class="bg-details1 bg-no-repeat py-10 px-10 rounded-lg drop-shadow-lg transform duration-500 hover:scale-105 relative z-[1] overflow-hidden  before:absolute before:inset-0 before:z-[-1] before:content-[''] before:w-full before:h-full before:bg-[#272727] before:bg-opacity-40">
+              <h1 class="text-2xl text-white font-lacbary font-bold mb-5">Fix Your Mind With <br>
+                Our Coffee</h1>
+              <h2 class="text-xl text-white font-Parisienne  mb-5">Welcome to our Café</h2>
+              <h3 class="text-sm text-white font-lacbary  mt-20">Get 10% Discount for <br>
+                Office Coffee </h3>
+            </div>
+            <div class="bg-details2 bg-no-repeat py-10 px-10 rounded-lg drop-shadow-lg transform duration-500 hover:scale-105 relative z-[1] overflow-hidden  before:absolute before:inset-0 before:z-[-1] before:content-[''] before:w-full before:h-full before:bg-[#272727] before:bg-opacity-40">
+              <h1 class="text-2xl text-white font-lacbary font-bold mb-5">Drink coffee and <br> keep writing.</h1>
+              <h2 class="text-xl text-white font-Parisienne  mb-5">Welcome to our Café</h2>
+              <h3 class="text-sm text-white font-lacbary  mt-20">Get 10% Discount for <br>
+                Office Coffee </h3>
+            </div>
+            <div class="bg-details3 bg-no-repeat py-10 px-10 rounded-lg drop-shadow-lg transform duration-500 hover:scale-105 relative z-[1] overflow-hidden  before:absolute before:inset-0 before:z-[-1] before:content-[''] before:w-full before:h-full before:bg-[#272727] before:bg-opacity-40">
+              <h2 class="text-xl text-white font-Parisienne  mb-36 text-center">Coffee & A Favorite <br> Book</h2>
+              <h3 class="text-sm text-white font-lacbary  mt-auto">Enjoy Our 15% Discount For A <br>
+                Book Lover </h3>
+            </div>
+          </div>
+      </section>
+    </main>
+</body>
+</html>
